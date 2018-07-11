@@ -19,11 +19,10 @@ function destructivelyRemoveFirstDriver() {
 }
 
 function appendDriver(name) {
-  // const newArray = []
-  // newArray.push(drivers[0], drivers[1], drivers[2])
-  // newArray.push(name)
-  // return newArray
-  return drivers.splice(-1, 0, name)
+  const newArray = []
+  newArray.push(drivers[0], drivers[1], drivers[2])
+  newArray.push(name)
+  return newArray
 }
 
 function prependDriver(name) {
